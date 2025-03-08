@@ -1,0 +1,3 @@
+local: vale apenas para o repositório atual
+global: vale para todos os repos do usuário logado atualmente no SO
+system: vale para todos os usuários do SO
