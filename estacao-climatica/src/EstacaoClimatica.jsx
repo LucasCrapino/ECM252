@@ -3,24 +3,24 @@
 import React, { Component } from 'react'
 
 export default class EstacaoClimatica extends Component {
-    
+
     timer = null
 
     state = {
         data: null
     }
 
-    componentDidMount(){
-        this.timer = setInterval(()=> {
+    componentDidMount() {
+        this.timer = setInterval(() => {
             //atualizar o estado, extraindo nova data do sistema, lembre-se de formatá-la de alguma fomra
             this.setState({
-                data:new Date().toLocaleTimeString
+                data: new Date().toLocaleTimeString()
             })
         }, 1000)
         console.log(this.timer)
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         clearInterval(this.timer)
     }
 
@@ -38,12 +38,9 @@ export default class EstacaoClimatica extends Component {
                         <p className="text-center">
                             {
                                 this.props.latitude ?
-                                    `Coordenadas: ${this.props.latitude}, ${this.props.longitude}. Data: ${this.props.data}`
+                                    `Coordenadas: ${this.props.latitude}, ${this.props.longitude}. Data: ${this.state.data}`
                                     :
-                                    this.props.mensagemDeErro ?
-                                        `${this.props.mensagemDeErro}`
-                                        :
-                                        'Clique no botão para saber a sua estação'
+                                    'Clique no botão para saber a sua estação'
                             }
                         </p>
                     </div>
