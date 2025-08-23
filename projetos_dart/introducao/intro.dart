@@ -1,18 +1,81 @@
-int somar(int a, int b){
-    return a + b;
-}
+import 'dart:io';
+import 'dart:math';
 
 void main(){
+    // var gerador = Random();
+    // print(gerador.nextInt(3));
+    // print(gerador.nextInt(10) + 1);
+    // print(gerador.nextInt(101));
+    // // [0,1]
+    // print(gerador.nextDouble());
+    // print(gerador.nextDouble() * 100);
+    // // [100,150]
+    // print(100 + gerador.nextDouble() * 50);
+    // // [17, 43]
+    // print(17 + gerador.nextDouble() * (43 - 17));
+    // print("digite a idade: ");
+    // int idade = int.parse(stdin.readLineSync()!);
+    // stdout.writeln("Digite seu nome: ");
+    // final nome = stdin.readLineSync();
+    // stdout.writeln("Oi, $nome");
+    // stdout.write("oi");
+    // stdout.writeln("oi");
+}
+// // 
+// enum DiaSemana{
+//     SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO
+// }
 
-    // switch/expression
-    final mediaFinal = 10;
-    final conceito = switch(mediaFinal){
-        10 || 9 => 'A',
-        8 => 'B',
-        _  => 'C'
-    };
+// void main(){
+
+//     // print(DiaSemana.values);
+//     // DiaSemana dia = DiaSemana.SABADO;
+//     // print(dia.name);
+//     // switch(dia){
+//     //     case DiaSemana.SEGUNDA:
+//     //         print(":(");
+//     //     case DiaSemana.SABADO || DiaSemana.DOMINGO:
+//     //         print(":)");
+//     //     default:
+//     //     print("whatever");
+//     // }
+//     // const SEGUNDA = 1;
+//     // if(dia == SEGUNDA)
+//     // int i = 0;
+//     // do {
+//     //   print(i++);
+//     // } while (i < 20);
+//     // while
+//     // while (i < 20){
+//     //     print(i);
+//     //     i++;
+//     // }
+//     // for each enhanced for
+//     // const nomes = ['José', 'Antônio'];
+//     // // for/in
+//     // for(final nome in nomes){
+//     //     print(nome);
+//     // }
+//     // for(int i = 0; i < 10; i++){
+//     //     print(i);
+//     // }
+// }
+
+// int somar(int a, int b){
+//     return a + b;
+// }
+
+// void main(){
+
+//     // switch/expression
+//     final mediaFinal = 10;
+//     final conceito = switch(mediaFinal){
+//         10 || 9 => 'A',
+//         8 => 'B',
+//         _  => 'C'
+//     };
    
-   print(conceito);
+//    print(conceito);
     // expression
     // const a = 2 + 2;
     // const b = a;
@@ -135,4 +198,3 @@ void main(){
     multiplas linhas
     */
     // print("Hello, World");
-}
