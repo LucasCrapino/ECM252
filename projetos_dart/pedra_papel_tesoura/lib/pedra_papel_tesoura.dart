@@ -49,7 +49,9 @@ void jogo() {
     final jogadaUsuario = opcoes.values[escolhaUsuario];
     final jogadaComputador = opcoes.values[escolhaComputador];
 
-    print("Jogador(${jogadaUsuario.name}) VS Computador(${jogadaComputador.name})");
+    print(
+      "Jogador(${jogadaUsuario.name}) VS Computador(${jogadaComputador.name})",
+    );
 
     if (jogadaUsuario == jogadaComputador) {
       print("Empate!");
@@ -61,5 +63,6 @@ void jogo() {
     } else {
       print("Computador venceu!");
     }
+    sleep(Duration(seconds: 3));
   }
 }
